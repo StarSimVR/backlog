@@ -43,3 +43,14 @@ In glTF 2.0 (.glb) you can also add texture directly to the model.
 
 ### Procedural textures
 You can use [this tool](https://github.com/RodZill4/material-maker) to create procedural textures. It generates all necessary files to use procedural textures in Godot.
+
+### VR support
+To add VR support, you should:
+
+* Add addon (e. g. OpenVR)
+* Add ARVROrigin node with ARVRCamera and two ARVRControllers (left and right) as children
+* Add scripts to ARVR-nodes
+
+Note that in VR 1 unit = 1 meter in the real world. Remember this creating your 3D models.
+
+See [Godot Docs](https://docs.godotengine.org/de/stable/tutorials/vr/index.html) for details.
